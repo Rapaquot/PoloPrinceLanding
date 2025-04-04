@@ -1,0 +1,247 @@
+:root {
+    --color-bg: #F5E9DA;           /* Warm Sand - main background */
+    --color-primary: #F4A261;      /* Golden Amber - buttons, accents */
+    --color-secondary: #8D6748;    /* Soft Brown - nav, footer */
+    --color-text: #2F2F2F;         /* Deep Charcoal - headings, text */
+    --color-highlight: #E9A9A7;    /* Soft Rose - optional love accent */
+    --color-cta: #6B8E23;          /* Olive Green - strong call to action */
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+.navbar {
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Logo styling */
+.logo img {
+  height: 60px;
+  width: 70px;
+  object-fit: cover;
+}
+
+
+  
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('images/missionImage.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /* Flexbox Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+
+
+
+    /*************************
+    MISSION SECTION
+  **************************/
+
+  .mission-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .mission-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 550px;
+  }
+  
+  .mission-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .caption {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .mission h2{
+    text-align: center;
+  }
+  
+  .mission-text {
+    flex: 2;
+    text-align: center;
+  }
+
+  .section-divider {
+    border: none;
+    height: 4px;
+    width: 60px;
+    margin: 0 auto 2rem;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+
+
+  .coming-soon-info {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+
+    /*************************
+    FOOTER SECtiON
+  **************************/
+
+  .site-footer {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 2rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-brand img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+  }
+  
+  .footer-tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #f9f9f9;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+
+  
+  
+  /* DESKTOP DESIGN */
+
+  @media (min-width: 768px) {
+
+    .logo{
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .logo img {
+      height: 60px;
+      width: 70px;
+      object-fit: cover;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }  
+
+    .mission-figure {
+      flex: 1;
+      max-width: 550px;
+      min-width: 300px;
+    }
+  
+    .mission-img {
+      max-width: 100%;
+    }
+  
+    .mission-text {
+      flex: 2;
+      padding-left: 2rem;
+    }
+  
+  }
+
+  
+
+  
